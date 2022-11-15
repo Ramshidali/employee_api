@@ -1,29 +1,33 @@
+
+# Created by sabeel
+.DS_Store
+data.json
+newdata.json
+._*
 ### Django ###
-*.pyc
-*.DS_Store
-
-**/migrations/
-**/migrations/**
-!**/migrations
-!**/migrations/__init__.py
-
-**/__pycache__/**
 *.log
+*.pot
+*.pyc
+__pycache__/
+*/__pycache__/
+*/*/__pycache__/
 
-*.sqlite3
+migrations/*.py
+*/migrations/*.py
+*/*/migrations/*.py
+
+!migrations/__init__.py
+!*/migrations/__init__.py
+!*/*/migrations/__init__.py
+
+local_settings.py
 db.sqlite3
 db.sqlite3-journal
-venv
+media/
 
-media/**
-!media/website
-
-.vscode
-*.ini
-.git_credentials
-gitpush
+# Environments
 .env
-.env.local
-.idea
-
-static/static_files/*
+.venv
+env/
+venv/
+settings.ini
